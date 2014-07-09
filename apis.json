@@ -1,0 +1,79 @@
+{
+  "name": "API Evangelist - Screen Capture API",
+  "description": "This is a working screen capture API, designed to accept URL, and return a screen capture of the URL.",
+  "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
+  "url": "http://screen-capture.apievangelist.com/",
+  "created": "04/07/2014",
+  "modified": "07/09/2014",
+  "SpecificationVersion": "0.14",  
+  "apis": [
+    {
+	  "name": "API Evangelist - Screen Capture API",
+	  "description": "This is a working screen capture API, designed to accept URL, and return a screen capture of the URL.",
+	  "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
+      "humanURL": "http://screen-capture.apievangelist.com/",
+      "baseURL": "http://screen-capture.api.apievangelist.com/definitions/Screen-Capture",
+      "tags": "blog, industry, analysis, news",
+      "urls": [
+        {
+          "type": "signup",
+          "url": "https://apievangelist.3scale.net/"
+        },
+        {
+          "type": "swagger",
+          "url": "http://screen-capture.api.apievangelist.com/definitions/Screen-Capture"
+        },
+        {
+          "type": "blog",
+          "url": "http://screen-capture.apievangelist.com/blog/"
+        },
+        {
+          "type": "apicommonsmanifest",
+          "url": "http://screen-capture.apievangelist.com/api-commons-manifest.json"
+        }
+      ],
+      "contact": [
+        {
+          "FN": "API Evangliest",
+          "email": "info@apievangelist.com",
+          "X-twitter": "apievangelist"
+        }
+      ]
+    }
+  ],
+  "include": [
+    {
+      "name": "API Evangelist - Products",
+      "url": "http://products.apievangelist.com/apis.json"
+    },
+    {
+      "name": "API Evangelist - Screen Capture",
+      "url": "http://screen-capture.apievangelist.com/apis.json"
+    },
+    {
+      "name": "API Evangelist - Image Manipulation",
+      "url": "http://image.manipulation.apievangelist.com/apis.json"
+    },
+    {
+      "name": "API Evangelist - API Ideas",
+      "url": "http://ideas.apievangelist.com/apis.json"
+    },
+    {
+      "name": "Public Private Sector",
+      "url": "http://publicprivatesector.org/apis.json"
+    },
+    {
+      "type": "API Commons",
+      "url": "http://apicommons.org/apis.json"
+    }
+  ],
+  "maintainer": [
+    {
+      "name": "Kin",
+      "twitter": "apievangelist",
+      "email": "kin@email.com"
+    }
+  ],
+  "tags": "api evangelist, API, Application Programming Interface, Screen Capture, Screenshot",
+  "modified": "07/09/2014"
+}
