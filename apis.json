@@ -14,7 +14,7 @@
       "humanURL": "http://screen-capture.apievangelist.com/",
       "baseURL": "http://screen-capture.api.apievangelist.com/definitions/Screen-Capture",
       "tags": "blog, industry, analysis, news",
-      "urls": [
+      "properties": [
         {
           "type": "signup",
           "url": "https://apievangelist.3scale.net/"
