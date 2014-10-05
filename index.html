@@ -4,33 +4,45 @@ title: Screen Capture API
 ---
 <script type="text/javascript">
 
-    var $Path = '/definitions/apis.json';
-
+    var $Path = 'http://screen-capture.api.apievangelist.com/definitions/apis.json';
+    
     $(function () {
-        window.swaggerUi = new SwaggerUi({
-            url: "http://screen-capture.api.apievangelist.com" + $Path,
-            dom_id: "swagger-ui-container",
-            supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
-            onComplete: function(swaggerApi, swaggerUi){
-            if(console) {
-                console.log("Loaded SwaggerUI")
-                }
-        
-            $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
-            },
-            onFailure: function(data) {
-            if(console) {
-                console.log("Unable to Load SwaggerUI");
-                console.log(data);
-                }
-            },
-            docExpansion: "none"
-        });
-        window.swaggerUi.load();
-        
-        Docs.toggleEndpointListForResource('Screen-Capture');
-        
-    });
+      var url = window.location.search.match(/url=([^&]+)/);
+      if (url && url.length > 1) {
+        url = url[1];
+      } else {
+        url = $Path;
+      }
+      window.swaggerUi = new SwaggerUi({
+        url: url,
+        dom_id: "swagger-ui-container",
+        supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
+        onComplete: function(swaggerApi, swaggerUi){
+          log("Loaded SwaggerUI");
+          if(typeof initOAuth == "function") {
+            /*
+            initOAuth({
+              clientId: "your-client-id",
+              realm: "your-realms",
+              appName: "your-app-name"
+            });
+            */
+          }
+          $('pre code').each(function(i, e) {
+            hljs.highlightBlock(e)
+          });
+        },
+        onFailure: function(data) {
+          log("Unable to Load SwaggerUI");
+        },
+        docExpansion: "none",
+        sorter : "alpha"
+      });
+
+      window.swaggerUi.load();
+  });
+  </script>    
+    
 </script>  
 
 <h1>Screen Capture API</h1>
