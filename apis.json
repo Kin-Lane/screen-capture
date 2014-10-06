@@ -12,7 +12,7 @@
 	  "description": "This is a working screen capture API, designed to accept URL, and return a screen capture of the URL.",
 	  "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
       "humanURL": "http://screen-capture.apievangelist.com/",
-      "baseURL": "http://screen-capture.api.apievangelist.com/definitions/Screen-Capture",
+      "baseURL": "http://screen-capture.api.apievangelist.com/definitions/screen-capture.json",
       "tags": "blog, industry, analysis, news",
       "properties": [
         {
@@ -21,7 +21,7 @@
         },
         {
           "type": "swagger",
-          "url": "http://screen-capture.api.apievangelist.com/definitions/Screen-Capture"
+          "url": "http://screen-capture.api.apievangelist.com/definitions/screen-capture.json"
         },
         {
           "type": "blog",
