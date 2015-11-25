@@ -16,20 +16,8 @@
       "tags": "blog, industry, analysis, news",
       "properties": [
         {
-          "type": "signup",
-          "url": "https://apievangelist.3scale.net/"
-        },
-        {
-          "type": "swagger",
+          "type": "Swagger",
           "url": "http://Kin-Lane.github.io/screen-capture/oadf.json"
-        },
-        {
-          "type": "blog",
-          "url": "http://Kin-Lane.github.io/screen-capture/blog/"
-        },
-        {
-          "type": "apicommonsmanifest",
-          "url": "http://Kin-Lane.github.io/screen-capture/api-commons-manifest.json"
         }
       ],
       "contact": [

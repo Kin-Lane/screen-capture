@@ -1,7 +1,7 @@
 {
   "swagger": 2,
   "info": {
-    "title": "API Evangelist Screen Capture API",
+    "title": "Screen Capture API",
     "description": "This is a simple API that accepts a URL to any website, then returns an image screenshot of the page.",
     "version": "1.0"
   },
