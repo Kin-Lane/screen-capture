@@ -1,5 +1,5 @@
 {
-  "swagger": 2,
+  "swagger": "2.0",
   "info": {
     "title": "Screen Capture API",
     "description": "This is a simple API that accepts a URL to any website, then returns an image screenshot of the page.",
@@ -44,15 +44,12 @@
         ],
         "responses": {
           "200": {
-            "description": "Returns successful screen capture image.",
+            "description": "screen capture response",
             "schema": {
-              "$ref": "Screen Capture"
-            }
-          },
-          "default": {
-            "description": "Unexpected error",
-            "schema": {
-              "$ref": "Error"
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/screencapture"
+              }
             }
           }
         }
@@ -60,7 +57,7 @@
     }
   },
   "definitions": {
-    "Screen Capture": {
+    "screencapture": {
         "properties": {
             "url": {
                 "type": "string",
@@ -68,20 +65,6 @@
                 "description": "URL of image screen capture"
             }
         }
-    },
-        "Error": {
-            "properties": {
-                "code": {
-                    "type": "integer",
-                    "format": "int32"
-                },
-                "message": {
-                    "type": "string"
-                },
-                "fields": {
-                    "type": "string"
-                }
-            }
-        }
+    }
   }
 }
