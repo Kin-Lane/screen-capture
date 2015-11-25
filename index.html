@@ -1,60 +1,16 @@
 ---
 layout: page
-title: Screen Capture API
 ---
 
-<div class="swagger-section">
-	
-  <script type="text/javascript">
-  
-    $(function () {
-      var url = window.location.search.match(/url=([^&]+)/);
-  if (url && url.length > 1) {
-    url = url[1];
-  } else {
-    url = "http://screen-capture.api.apievangelist.com/definitions/screen-capture.json";
-  }
-  window.swaggerUi = new SwaggerUi({
-    url: url,
-    dom_id: "swagger-ui-container",
-    supportedSubmitMethods: ['get', 'post', 'put', 'delete'],
-    onComplete: function(swaggerApi, swaggerUi){
-      log("Loaded SwaggerUI");
-      if(typeof initOAuth == "function") {
-        /*
-        initOAuth({
-          clientId: "your-client-id",
-          realm: "your-realms",
-          appName: "your-app-name"
-        });
-        */
-      }
-      $('pre code').each(function(i, e) {
-        hljs.highlightBlock(e)
-      });
-    },
-    onFailure: function(data) {
-      log("Unable to Load SwaggerUI");
-    },
-    docExpansion: "none",
-    sorter : "alpha",
-    docExpansion: "list"
-  });
+<p><a href="index.html?login=1"id="login-github-icon-link" title="Login w/ Github to Access"><img id="login-github-icon" src="https://s3.amazonaws.com/kinlane-productions/building-blocks/bw-github.png" width="28" align="right" style="margin: 3px;" /></a></p>
 
-      window.swaggerUi.load();
-  });
-  
-  </script>    
+<div id="jsonNavigator""><table cellpadding="3" cellspacing="2" border="0" width="95%" id="jsonNavigatorTable" style="margin-left: 15px;"></table></div>
 
-<!--<div id="message-bar" class="swagger-ui-wrap">&nbsp;</div>-->
-<div id="swagger-ui-container" class="swagger-ui-wrap"></div>
+<div id="questionsViewer" style="display: none;">
+	<p>This is an editor for the APIs.jon file contained as part of this repository, making them editable through a web interface, and able to save using the Github API (if you have access to repo)--enable full client-side management of Swagger files.</p>
+	<p>This APIs.json editor mounts the default APIs.json file for this project located at /apis.json, and renders to the page for viewing, and inline editing. I've used standard icons to assist in usability.</p>
+	<p>This APIs.json editor works in conjunction with the Swagger editor, allowing for the editing of the entire API discovery layer for this Github repository, and using APIs.json includes, I can link to the other supporting projects in this stack.</p>
+	<p>This is meant to be an quicker, dirtier, Swagger editor, and UI generator that runs 100% on Github, for this particular project. The code is not meant to be clean or for production. I'm purposely making the code verbose, and for instructional purposes, allowing all aspects of this to be modified and remixed as needed..</p>
+	<p>If you are listed as collaborator on this Github organization you should be able to login using Github icon above, and get access to manage all other aspects of this micro-service.</p>
 </div>
-    
-<br /><br />
-<!-- 3scale -->
-<p align="center">
-<a href="http://3scale.net" target="_blank" title="APIs From 3Scale">
-    <img src="https://s3.amazonaws.com/kinlane-productions/api-service-providers/3Scale/empowered-by-3scale.png" width="300" style="padding-bottom: 15px;" />
-</a>        
-</p>
-<!-- 3scale -->    
+<p><br /></p>
