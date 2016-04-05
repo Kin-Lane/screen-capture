@@ -1,42 +1,120 @@
-{
-  "name": "API Evangelist - Screen Capture API",
-  "description": "This is a working screen capture API, designed to accept URL, and return a screen capture of the URL.",
-  "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
-  "url": "http://screen-capture.apievangelist.com/",
-  "created": "04/07/2014",
-  "modified": "07/09/2014",
-  "SpecificationVersion": "0.14",
-  "apis": [
-    {
-	  "name": "API Evangelist - Screen Capture API",
-	  "description": "This is a working screen capture API, designed to accept URL, and return a screen capture of the URL.",
-	  "image": "https://s3.amazonaws.com/kinlane-productions/api-evangelist/t-shirts/KL_InApiWeTrust-1000.png",
-      "humanURL": "http://screen-capture.apievangelist.com/",
-      "baseURL": "http://screen-capture.api.apievangelist.com/definitions/screen-capture.json",
-      "tags": "blog, industry, analysis, news",
-      "properties": [
-        {
-          "type": "Swagger",
-          "url": "http://Kin-Lane.github.io/screen-capture/oadf.json"
-        }
-      ],
-      "contact": [
-        {
-          "FN": "API Evangliest",
-          "email": "info@apievangelist.com",
-          "X-twitter": "apievangelist"
-        }
-      ]
-    }
-  ],
-  "include": [],
-  "maintainer": [
-    {
-      "name": "Kin",
-      "twitter": "apievangelist",
-      "email": "kin@email.com"
-    }
-  ],
-  "tags": "api evangelist, API, Application Programming Interface, Screen Capture, Screenshot",
-  "modified": "07/09/2014"
-}
+[{
+	"name": "Curated API",
+	"description": "As I look through the thousands of tweets, blog posts, and other items I read from across the API space, I curate them as part of my regular research. I put them into each research bucket, and make them availble via each reserch project. You can access via this API, and use in real-time as I curate and manage each week.",
+	"image": "https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-abundance.png",
+	"x-open-ranking": "0",
+	"tags": ["Kin Lane Curated APi"],
+	"created": "2016-04-04",
+	"modified": "2016-04-04",
+	"url": "https://kin-lane.github.io/curated/"
+	"specificationVersion": "0.14",
+	"apis": [{
+		"name": "Kin Lane Curated",
+		"description": "<p>As I look through the thousands of tweets, blog posts, and other items I read from across the API space, I curate them as part of my regular research. I put them into each research bucket, and make them availble via each reserch project. You can access via this API, and use in real-time as I curate and manage each week.</p>",
+		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kin.png",
+		"humanURL": "https://kin-lane.github.io/curated/",
+		"baseURL": "https://kin-lane.github.io/curated/",
+		"tags": ["Kin Lane Curated APi"],
+		"properties": [{
+			"type": "x-openapi-spec",
+			"url": "api-commons/openapi-spec.json"
+		}]
+	}],
+	"x-common": [{
+		"type": "x-blog-rss-feed",
+		"url": "http://www.talkwalker.com/alerts/rss/NG2GCZBIIN4ULOCFJRSUK6EIY2AZLCE2YTABNE6EHW4OAA2B53FA%3D%3D%3D%3D"
+	},
+	{
+		"type": "x-authentication-overview",
+		"url": "authentication/"
+	},
+	{
+		"type": "x-base-url-for-api",
+		"url": "http://api.kinlane.com"
+	},
+	{
+		"type": "x-blog",
+		"url": "blog/"
+	},
+	{
+		"type": "x-blog-rss-feed",
+		"url": "blog.xml"
+	},
+	{
+		"type": "x-change-log",
+		"url": "change-log/"
+	},
+	{
+		"type": "x-portal",
+		"url": "https://kin-lane.github.io"
+	},
+	{
+		"type": "x-documentation",
+		"url": "documentation/"
+	},
+	{
+		"type": "x-faq",
+		"url": "frequently-asked-questions/"
+	},
+	{
+		"type": "x-getting-started",
+		"url": "getting-started/"
+	},
+	{
+		"type": "x-github",
+		"url": "https://github.com/kinlane"
+	},
+	{
+		"type": "x-issues",
+		"url": "issues/"
+	},
+	{
+		"type": "x-login",
+		"url": "https://apievangelist.3scale.net/login"
+	},
+	{
+		"type": "x-dedicated-plans--pricing-page",
+		"url": "plans/"
+	},
+	{
+		"type": "x-privacy-policy-page",
+		"url": "privacy-policy/"
+	},
+	{
+		"type": "x-road-map",
+		"url": "road-map/"
+	},
+	{
+		"type": "x-selfservice-registration",
+		"url": "https://apievangelist.3scale.net/signup"
+	},
+	{
+		"type": "x-status-dashboard",
+		"url": "status/"
+	},
+	{
+		"type": "x-support-overview-page",
+		"url": "support/"
+	},
+	{
+		"type": "x-terms-of-service-page",
+		"url": "terms-of-service/"
+	},
+	{
+		"type": "x-twitter",
+		"url": "https://twitter.com/kinlane"
+	},
+	{
+		"type": "x-api-plan",
+		"url": "api-commons/api-plan.json"
+	}],
+	"include": [{
+		"name": "Parent",
+		"url": "https://kin-lane.github.io/curated//apis.yaml"
+	}],
+	"maintainers": [{
+		"FN": "Kin Lane",
+		"x-twitter": "apievangelist",
+		"email": "info@apievangelist.com"
+	}]
+}]
