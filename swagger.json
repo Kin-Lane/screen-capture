@@ -1,0 +1,87 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "API Evangelist Screen Capture API",
+    "description": "This is a simple API that accepts a URL to any website, then returns an image screenshot of the page.",
+    "version": "1.0"
+  },
+  "host": "screen-capture.api.apievangelist.com",
+  "basePath": "/v1",
+  "schemes": [
+    "http"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/screen-capture": {
+      "get": {
+        "summary": "Screen Capture",
+        "description": "Returns PNG file returned from screen capture of a url.",
+        "operationId": "captureScreen",
+        "parameters": [
+          {
+            "name": "appid",
+            "in": "query",
+            "description": "application id for application making calls",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "appkey",
+            "in": "query",
+            "description": "application key for application making calls",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "url",
+            "in": "query",
+            "description": "a url for screen capture",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns successful screen capture image.",
+            "schema": {
+              "$ref": "Screen Capture"
+            }
+          },
+          "default": {
+            "description": "Unexpected error",
+            "schema": {
+              "$ref": "Error"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Screen Capture": {
+        "properties": {
+            "url": {
+                "type": "string",
+                "format": "string",
+                "description": "URL of image screen capture"
+            }
+        }
+    },    
+        "Error": {
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                },
+                "fields": {
+                    "type": "string"
+                }
+            }
+        }
+  }
+}
