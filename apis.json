@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
 	"name": "Curated API",
 	"description": "As I look through the thousands of tweets, blog posts, and other items I read from across the API space, I curate them as part of my regular research. I put them into each research bucket, and make them availble via each reserch project. You can access via this API, and use in real-time as I curate and manage each week.",
@@ -7,14 +8,27 @@
 	"created": "2016-04-04",
 	"modified": "2016-04-04",
 	"url": "https://kin-lane.github.io/curated/",
+=======
+[{
+	"name": "Kin Lane Screen Capture API",
+	"description": "I use screenshots across the API Evangelist network. I take screenshots of stories I curated, companies I track on and API developer areas I'm monitoring. Historically I've used a variety of screenshot APIs, to generate the 1000's of screenshots I need to make my network function. After test driving several image libraries I settled in with PhantomJS, which allows me to load and manipulate web pages in an object, and then take a screenshot of the web page in that state. I quickly wrapped in a web API using the Slim Framework in PHP. Once I had the API deployed I wrapped with my 3Scale API management infrastructure, which requires an API key before you can use any of my APIs. Next I updated my company, API and news screenshot tool to use my new screenshot API.",
+	"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/blog/api-evangelist-screen-capture.png",
+	"x-open-ranking": "0",
+	"tags": ["Screen-Capture-API",
+	"Kin Lane Screen Capture API"],
+	"created": "2016-04-05",
+	"modified": "2016-04-05",
+	"url": "https://kin-lane.github.io/screen-capture/"
+>>>>>>> origin/gh-pages
 	"specificationVersion": "0.14",
 	"apis": [{
-		"name": "Kin Lane Curated",
-		"description": "<p>As I look through the thousands of tweets, blog posts, and other items I read from across the API space, I curate them as part of my regular research. I put them into each research bucket, and make them availble via each reserch project. You can access via this API, and use in real-time as I curate and manage each week.</p>",
+		"name": "Kin Lane Screen Capture API",
+		"description": "This is my master org.",
 		"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/kin.png",
-		"humanURL": "https://kin-lane.github.io/curated/",
-		"baseURL": "https://kin-lane.github.io/curated/",
-		"tags": ["Kin Lane Curated APi"],
+		"humanURL": "",
+		"baseURL": "",
+		"tags": ["Screen-Capture-API",
+		"Kin Lane Screen Capture API"],
 		"properties": [{
 			"type": "x-openapi-spec",
 			"url": "api-commons/openapi-spec.json"
@@ -110,7 +124,7 @@
 	}],
 	"include": [{
 		"name": "Parent",
-		"url": "https://kin-lane.github.io/curated//apis.yaml"
+		"url": "https://kin-lane.github.io/screen-capture//apis.yaml"
 	}],
 	"maintainers": [{
 		"FN": "Kin Lane",
